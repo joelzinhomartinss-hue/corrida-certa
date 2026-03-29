@@ -4,8 +4,8 @@ workflows:
     environment:
       java: 17
     scripts:
-      - name: Build APK
+      - name: Build APK with system Gradle
         script: |
-          ./gradlew assembleDebug
+          gradle assembleDebug
     artifacts:
       - app/build/outputs/**/*.apk

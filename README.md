@@ -1,2 +1,3 @@
-# corrida-certa
-App Corrida Certa - cálculo de lucro para motoristas de Uber
+# Corrida Certa
+
+Projeto base Android para o app Corrida Certa.
