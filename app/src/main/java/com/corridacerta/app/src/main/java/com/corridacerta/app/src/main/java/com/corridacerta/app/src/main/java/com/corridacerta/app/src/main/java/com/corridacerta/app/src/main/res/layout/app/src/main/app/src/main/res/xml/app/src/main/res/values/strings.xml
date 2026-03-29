@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Corrida Certa</string>
-    <string name="accessibility_description">
-        Aplicativo que calcula lucro das corridas automaticamente
-    </string>
-</resources>
