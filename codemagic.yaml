@@ -3,9 +3,18 @@ workflows:
     name: Android Build
     environment:
       java: 17
+      android_signing:
+        - keystore_reference
     scripts:
-      - name: Build APK with system Gradle
+      - name: Set Gradle version
+        script: |
+          wget https://services.gradle.org/distributions/gradle-8.2-bin.zip
+          unzip gradle-8.2-bin.zip
+          export PATH=$PWD/gradle-8.2/bin:$PATH
+
+      - name: Build APK
         script: |
           gradle assembleDebug
+
     artifacts:
       - app/build/outputs/**/*.apk
